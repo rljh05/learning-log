@@ -1,0 +1,97 @@
+This is where I'll take notes on my progress and thoughts for the day. Currently im halfway done with inux Fundamentals Part 1 on TryHackMe.
+Due to an issue with the lab I could not directly open up the Linux terminal through the VM, that led me to think about how in class (haven't started yet)
+we were briefed in an email about remote login to lab computers, so I thought, why not try ssh'ing into it? Of course this thought didn't come imediately since
+my first idea was to see if the VM on Part 2 was also having issues, and to my suprise it was not! However it was different from the first as it wanted you to ssh into a new VM
+and so, the dots connected!
+
+Anyway, currently I'm using Linux Fubdaentals Part 2 to ssh into the VM for Part 1, it's pretty fun so far, though I need to make sure
+I keep all of the commands in mind for manuvering through files and whatnot because they are useful. So far of the top of my head I remember;
+
+cat, which uh I can't remmeber its purpose but I'm pretty sure it reads files.
+pwd, prints the pathway to the directory your on
+grep, I'm pretty sure this is the one that looks for specific things inside files?
+find, this was a fun one for me, it basically just looks for whatever file you name (find -name "") pretty sure its written like this, I can'trecall.
+but there is also the version that finds specific extensions instead like (find *.txt) though I could be misremembering its exact format
+cd, change directory, (cd ..) goes back to root iirc, and (cd .) goes downward in the list?
+
+I can't recall anymore offtop, so I'm gonna go back and list them all!
+
+echo, repeats the text you put in, so like (echo Hi) would print Hi. And usually you don't need parenthesis but it's best to have for phrases that include a space, such as (echo "How are you?") so it prints it exactly as written and doesn't only print How.
+whoami, tells you who "you" are, as in who is logged in at the moment, this will be useful for if maybe you have multiple people using one machine and someone doesn't log out?
+ls, lists files, folders and/or directories that are in whatever location your in within the system
+cat, so I was right earlier, though it describes it more... bluntly as "outputting the contents of a file", which is what it does, I just feel like the description is lacking in flair!
+pwd, more formally called Print Working Directory, does exactly what I said earlier, and spits out the pathway to your current location
+find, my favorite command for reasons I can't articulate, its pretty straightforward (find -name ""), it will search the system for the file which has that name and spit out the pathway to it. My fsvorite part is that you can select to only find files with a certain extension by doing (find -name *.txt) and it will search the system for all files with that extension and spit out their pathways. Though I feel like it would be simpler just being able to do (find -fileType txt) but oh well.
+wc, there isn't really an explanation for this command so I'm inferring it stands for "word count" because in the example it was used to find the number of entries within a file, and it was paired with -l so I'm guessing that would mean something along the lines of "find the wordcount as a list" and not the literal word count/character count, or maybe -l stands for line, which would make sense if it isolates it by line, that was the idea I had when imagining it going by list but didn't know how to say it. I can see how this is useful for larger files!
+grep, the hardest worker here, well, below find. Anyway, grep is basically the fine-toothed-comb version of cat combined with wc, from what I can understand you can look for specific words or phrases within a file so using it like 'grep "this word" randomFile.txt" would find how many times "this word" was mentioned in randomFile.txt. Which is pretty cool! though I guess it would be used for extremely specific cases and larger files, like in the example where it was used, they used it to comb through an access log to find how many times a particular IP address was etnered in/gained access to whatever resource the log was tracking. I could imagine this being used by a network admin to track exactly what a person has been doing on their network. I onder why they don't just name it "comb" that sounds so much cooler to me, (comb "this user" logFile.txt)!
+
+Well, that's all for the basic Linux commands they reccomend me to learn in Part 1, though next seem to be Shell commands, I'll come ack in an hour or so and cover those. I could keep drilling away, but if I do too much my brain my melt, writing ut my thoughts is actually much more time-consuming/mentally draining than I thught!
+But I'm excited to finish up all three Linux parts, I'm gonna try, no I will get it done before the day ends, well, maybe not all 3, but at the very least half of Part 2! 
+SSH'ing into computers remotely is really cool, and I do wanna learn more about that, so.... cya!
+
+Timestamp- 12:26 (08/17/25) <Break Time!>
+
+Timestam- 15:44 (08/17/25) <Back 2 Work>
+
+That uh, was a much longer break than I intended, go a little too wrapped up in netflix. Anyway, lets continue with Linux Fundamnetals Part 1!
+
+Linux Shell operators!
+
+&, this operator lets you run commands in the background of your terminal, which I suppose is useful if you want something to run perpetually while also being able to run newer commands actively.
+&&, this operator allows you to combine two or more comands into one, or better said, have them all run at once, possibly in the order they are written.
+>, this operator allows us to redirect the output of another command to somewhere else? || I'm not exactly too sure on the meaning of this, but im going to infer that its simillar to the ans key on a calculator, meaning you could possibly use it directly as is within a new command? 
+The assumption for the above operator was incorrect, it's actually much simpler than that, and very interesting, basically it, funnily enough, sends the output elsewhere literally. You can designate files, direcotires, or folders for the utput to be sent and they will appear there, quite interesting!
+>>, interestingly enough, this operator does exactly what the above does, however instead of completely wiping everything within the space your sending the output it merely adds it alongside everything else, definitely a more enviroment friendly option when adding data to sensitive files!
+
+Annnnnd that's it for Linux Fundamentals Part 1! 
+
+onto the next...
+
+Linux Fundamentals part 2
+
+Well, things got more fun, as I said earlier we are now ssh'ing into the VM associated with this lab, honestly i'm really glad that certain security measures are built in so noone can just ssh into computers at will as long as they know your IP, that would be chaos!
+
+Now we're learning more about arguments, luckily its the fun kind!
+
+Arguments are structured as hyphen (-) and flag/switch (letter or letters) like earlier when using the find command we did (find -name) -name is the arg to specify what the find command should do, I think?
+
+the argument -a is short for (-all)
+
+Interesting, so hidden files start with a . like (.hiddenfile), very interesting
+
+im gonna try that on my laptop
+
+there really IS hidden stuff! interesting
+
+interesting, hidden directories too, interesting!
+
+well, I just learned why you don't cat random files, holy, I thought I broke something it kept spitting out so much info I was spamming ctrl+c
+
+damn, I got lost, hmmmm, well that was fun, back to the leson!
+
+I wonder, at one point I kept trying to go back to root but the squiggly line kept outputting letters instead of the squiggly line... Not too sure why, I may have went somewhere I had no buisness going, gotta be more careful since I don't know much bout the system
+
+Back to the lesson fr fr this time!
+
+the --help arg, i did know about this, I had to use it when downloading python when I was fooling around to automte tying scripts to automate fishing with dankmemer on discord without messing with the app, not that i could... yet, thought I used chatgpt so i wont claim credit for that
+
+huh, so args are more complicated than i thought, it even includes capital letters!
+
+There's uh... 26 n the english lphabet i think? so that's already 52 different types, not to mention that some are words.... Just how do people even memorizie this stuff? I even forget what some texting acronyms are despite always using them, no way
+
+jeez, I think I'll come back to explainng all of them later idk if my mind can handle each of these they are rather... diversely complex
+
+THERE'S A MANUAL?
+
+....Why didn't I know about this? I have known about the wonders of the terminal since like 5th grade, and I thought I was the shit just knowing how to open it.... If I had know there was a manual back then I....
+
+oh my fucking god it actually exists, my mind is genuinely blown right now,wtf.
+
+oh my god and its so extensive! I literally coould'vebeen known.... If I had known so many incidencts couldve been avoided.... I could've, I literally could've just oh my god I coulda just prevented my first laptop from getting a virus, no in the firt place i would've been able to recognize what they were doing inside my terminal when I let them in and stopped them... this is a revelation for sure. 
+
+okay, so I've gotten to Task4, it took me way too long to figure out -h makes things readable for humans... Anyway, im gonna take another break, 45m this tie I swear it.
+
+Timestamp- 16:27 (08/17/25) <Short Break!>
+
+uh, well I uh, forgot....
+
