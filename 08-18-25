@@ -1,0 +1,30 @@
+Oooooookay! So, yesterday was a bit of a fail, I meant to come back but got caught up reading... Anyway, I'll continue on!
+
+Timestamp: 15:30 (08/18/25) <Begin!>
+
+More filesystem stuff!
+
+touch, this command is used to make files, pretty straightforward.... Though idk why they didn't just name it something like (create -file "filename") but I guess that would've been less interesting, huh? (touch testfile.txt)
+mkdir, this command creates a new directory, better named than "touch" so thats a plus, plus its useful for general organization.
+cp, this command copies a file or folder, not too sure whether this means duplication or not, but seeing as how there is no paste im assuming it makes a clone of the file in a selected location
+mv, this command moves a file or folder from one place to another. Interesting, it can also be used to "rename" files.
+rm, the dangerous one, this command erases anything its set upon, as for whether there is an undo... well, I have the feeling there isn't.
+file, this one just... tells you the type of file it is? interesting, some files appear as directories, so I guess this is useful if you want to make something appear as something else to hide pathways to something? not sure...
+
+Well, now we're playing with permissions! I despise this already because its so annoying to read, so many nuances to know...
+
+To read them (permissions)n they are divided into 3 columns; Read Write Execute, and these three things determine how a user or group may interact with that file
+
+New commands!
+
+su, switch user, a nice abbreviations, to use it you's do (su "username" "password")
+
+okay, so I didn't complete it again today, BUT I got practical experience using everything I learnd and was able to do some commands off of recall without having to come here and look, so I call that a win.... Now, I WILL get it all done tmrw though!
+
+had some fun ssh'ing into the lab computer at school from my dorm, but I got a little carried away and didn't carefully input my password, and since you can't see inputs... well, I gotta get it reset. luckily this is before classes start so I have some leeway to flounder.
+
+anyway, cya tmrw!
+
+
+
+
