@@ -1,0 +1,28 @@
+Holllyyy, took a month break, classes needed my utmost attention and my mental state was.... not the best! But now I think my head is on straight and we can continue!
+
+So we're back where we left off at Linux Fundamentals Part 2, Permissions.
+God I hate how they look, but they ARE useful, had to delete a whole directory because I fudged them up once and couldn;t for the life of me access what was inside it because of wonky permisswions even ignoring my admin account and sudo :p
+Luckily it was a test directory so nothing important was lost, but geez, I know the importance of perms now.
+Anyway, my goal for this bit is really just to tie up Part 2, I don't have high expectations to get it all done today since I also need to start laying the groundwork for my first CS porject in Java
+Gonna use W3 schools like I used to, coding is so much damn fun, its like a puzzle with infinite pieces, and I can make whatever picture i want with them all! 
+The only issue though, is that until I learn what the piece are I can'y use them, but that is also more exciting because learning th epieces makes you thik of "what other pieces could exist" which is extremely exciting!
+
+Anyway, enough banter since im running out of time, math class is soon, and before today I couldn't understand why we needed so much math, but today in class we needed to create a for loop that printed only odd numbers and I kept second guessing myself whether evens had no remainders or not, thus the logic behind math is very importnt for certain things!
+of course, if I coud earn only math logic and not do math itself that would be a dream, but unfortunately I must suffer at the hands of pre-calc and trig. 
+
+Okay! so lets begin.
+
+Timestamp (start): 11:30 09/15/25
+
+So, to see permissions of files within your current directory you use ls -lh, now as for what -lh stands for im not sure, I'll look into it more deeply later today and update this entry
+From left to right there are three columns which represent the Read, write, and Execute permissions respectively. 
+There are two different permission classifications, Users and Groups, though I suppose technically three, Owner, Users, and Groups.
+You can switch between users by using the su command, interesting, so the I forgot the tech nical term so I'll just say "additions" to su are -l and --ogin
+The difference between su user and su -l user is that su switches to the other user within the same directory you are in, while su -l switches to the user while also moving into the home directory of tht user
+
+got some practice using su, nothing too fnncy, but I understand how it works, i'll need to mentally go over it more after math class, but that starts sooon so I gotta review for that!
+Ration Inequalities :( anyway, it's been 30nminutes, not tooo bad I'll finish up once im back, ciao!
+
+Timestamp (break): 12:00 09/15/25
+
+Ahem... so uh, I lied... cya on the ost current day!
